@@ -5,3 +5,9 @@ dist/
 .DS_Store
 coverage/
 .vscode/
+*.sketch
+*.xd
+*.fig
+.DS_Store
+README-template.md
+

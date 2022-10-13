@@ -1,7 +1,7 @@
 {
-  "name": "new-project",
+  "name": "base-apparel-coming-soon-page",
   "version": "1.0.0",
-  "description": "this is a new project",
+  "description": "Frontend mentor challenge",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
