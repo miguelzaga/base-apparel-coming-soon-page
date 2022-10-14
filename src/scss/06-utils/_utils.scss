@@ -1,1 +1,9 @@
 @use "./../01-abstracts/" as *;
+
+.max-width {
+  max-width: calc(445px + 64px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}

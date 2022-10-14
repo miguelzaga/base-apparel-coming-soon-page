@@ -1,1 +1,26 @@
 @use "./../01-abstracts/" as *;
+
+.main {
+  &__container {
+    text-align: center;
+    margin: 64px auto 92px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: rem(40px);
+    line-height: rem(42px);
+    letter-spacing: rem(10.8254px);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    &--bold {
+      font-weight: 600;
+      color: $masala-brown;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+}

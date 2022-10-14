@@ -1,9 +1,10 @@
 @use "./../01-abstracts/" as *;
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 body {
   color: $eunry-pink;
   font-size: rem(14px);
+  line-height: rem(22px);
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif;
 }
