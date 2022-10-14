@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "/src/images/logo.svg";
+import iconArrow from "/src/images/icon-arrow.svg";
 import heroMobile from "/src/images/hero-mobile.jpg";
 
 function App() {
@@ -23,11 +24,11 @@ function App() {
           <form className="main__form">
             <input
               type="text"
-              className="main__form"
+              className="main__input"
               placeholder="Email Address"
             />
-            <button className="main__btn btn">
-              <img className="main__btn-img" src="" />
+            <button className="main__btn">
+              <img className="main__btn-img" src={iconArrow} />
             </button>
           </form>
         </div>
