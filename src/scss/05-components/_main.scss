@@ -26,6 +26,34 @@
 
   &__form {
     position: relative;
+    &--error {
+      & .main__input {
+        border: solid 2px $error-red;
+        &:focus-visible {
+          outline-color: $error-red;
+        }
+      }
+
+      &::before {
+        content: url("/src/images/icon-error.svg");
+        position: absolute;
+        right: 72px;
+        top: 13px;
+      }
+
+      &::after {
+        content: "Please provide a valid email";
+        font-size: rem(13px);
+        line-height: rem(13px);
+        color: $error-red;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 8px;
+        margin-left: 24px;
+        text-align: left;
+      }
+    }
   }
 
   &__input {

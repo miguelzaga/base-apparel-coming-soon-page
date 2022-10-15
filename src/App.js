@@ -16,9 +16,9 @@ function App() {
 
   function handleSubmit(event) {
     if (isValidEmail(input)) {
+      setError(false);
       window.alert(`You have subscribed succesfully with the email: ${input}`);
     } else {
-      console.log("error");
       setError(true);
     }
     event.preventDefault();
@@ -41,7 +41,10 @@ function App() {
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form className="main__form" onSubmit={handleSubmit}>
+          <form
+            className={`main__form ${error ? "main__form--error" : ""}`}
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               value={input}
