@@ -7,4 +7,9 @@ body {
   line-height: rem(22px);
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif;
+
+  @include breakpoint($lg) {
+    font-size: rem(16px);
+    line-height: rem(28px);
+  }
 }

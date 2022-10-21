@@ -6,4 +6,16 @@
   margin-right: auto;
   padding-left: 32px;
   padding-right: 32px;
+
+  @include breakpoint($lg){
+    margin-left: 0;
+ //   margin-left: calc(165px - 32px);
+  }
 }
+
+.wrapper {
+  position: relative;
+  max-width: calc(1440px - 330px);
+  margin: auto;
+}
+

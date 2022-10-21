@@ -1,9 +1,24 @@
 @use "./../01-abstracts/" as *;
 
 .main {
+  &__img {
+    max-width: 445px;
+    margin: auto;
+    @include breakpoint($lg) {
+      position: absolute;
+      top: 0;
+      right: -165px;
+      max-width: max-content;
+    }
+  }
+
   &__container {
     text-align: center;
     margin: 64px auto 92px;
+
+    @include breakpoint($lg) {
+      text-align: left;
+    }
   }
 
   &__title {
@@ -14,6 +29,13 @@
     text-transform: uppercase;
     margin-bottom: 16px;
 
+    @include breakpoint($lg) {
+      font-size: rem(64px);
+      line-height: rem(64px);
+      letter-spacing: rem(17.3206px);
+      margin-bottom: 32px;
+    }
+
     &--bold {
       font-weight: 600;
       color: $masala-brown;
@@ -22,6 +44,10 @@
 
   &__text {
     margin-bottom: 32px;
+
+    @include breakpoint($lg){
+      margin-bottom: 40px;
+    }
   }
 
   &__form {
@@ -29,9 +55,6 @@
     &--error {
       & .main__input {
         border: solid 2px $error-red;
-        &:focus-visible {
-          outline-color: $error-red;
-        }
       }
 
       &::before {
@@ -39,6 +62,10 @@
         position: absolute;
         right: 72px;
         top: 13px;
+    @include breakpoint($lg){
+      right: 116px;
+        top: 17px;
+    }
       }
 
       &::after {
@@ -52,6 +79,9 @@
         margin-top: 8px;
         margin-left: 24px;
         text-align: left;
+    @include breakpoint($lg){
+      line-height: rem(28px);
+    }
       }
     }
   }
@@ -71,6 +101,10 @@
     &:focus-visible {
       outline-color: $eunry-pink;
     }
+
+    @include breakpoint($lg){
+      height: 56px;
+    }
   }
 
   &__btn {
@@ -82,12 +116,26 @@
     box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
     border-radius: 28px;
     border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      box-shadow: none; 
+    }
 
     &-img {
       width: 12px;
       margin: auto;
       position: relative;
       left: 2px;
+    }
+
+    @include breakpoint($lg) {
+      width: 100px;
     }
   }
 }

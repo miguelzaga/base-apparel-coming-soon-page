@@ -1,9 +1,20 @@
 @use "./../01-abstracts/" as *;
 
 .header {
-  padding: 31px 32px 32px;
+    padding-top: 31px; 
+    padding-bottom: 32px;
 
   &__logo {
     max-width: 100px;
+  }
+
+  @include breakpoint($lg) {
+    padding-top: 75px; 
+    padding-bottom: 0;
+    margin-bottom: 136px;
+
+    &__logo {
+      max-width: 158px;
+    }
   }
 }
