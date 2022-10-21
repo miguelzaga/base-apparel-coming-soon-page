@@ -29,13 +29,17 @@ function App() {
   return (
     <div className="wrapper">
       <header className="header max-width">
-        <img className="header__logo" src={logo} />
+        <img alt="logo" className="header__logo" src={logo} />
       </header>
 
       <main className="main">
         <picture>
           <source media="(min-width: 1024px)" srcSet={heroDesktop} />
-          <img className="main__img" src={heroMobile} />
+          <img
+            alt="young lady with an orange shirt"
+            className="main__img"
+            src={heroMobile}
+          />
         </picture>
         <div className="main__container max-width">
           <h1 className="main__title">
@@ -57,8 +61,8 @@ function App() {
               className="main__input"
               placeholder="Email Address"
             />
-            <button className="main__btn">
-              <img className="main__btn-img" src={iconArrow} />
+            <button aria-label="submit email" className="main__btn">
+              <img alt="arrow icon" className="main__btn-img" src={iconArrow} />
             </button>
           </form>
         </div>
