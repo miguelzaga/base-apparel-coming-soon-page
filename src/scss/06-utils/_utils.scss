@@ -7,9 +7,9 @@
   padding-left: 32px;
   padding-right: 32px;
 
-  @include breakpoint($lg){
+  @include breakpoint($lg) {
     margin-left: 0;
- //   margin-left: calc(165px - 32px);
+    //   margin-left: calc(165px - 32px);
   }
 }
 
@@ -18,4 +18,3 @@
   max-width: calc(1440px - 330px);
   margin: auto;
 }
-

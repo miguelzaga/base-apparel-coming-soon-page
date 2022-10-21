@@ -45,7 +45,7 @@
   &__text {
     margin-bottom: 32px;
 
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       margin-bottom: 40px;
     }
   }
@@ -62,10 +62,10 @@
         position: absolute;
         right: 72px;
         top: 13px;
-    @include breakpoint($lg){
-      right: 116px;
-        top: 17px;
-    }
+        @include breakpoint($lg) {
+          right: 116px;
+          top: 17px;
+        }
       }
 
       &::after {
@@ -79,9 +79,9 @@
         margin-top: 8px;
         margin-left: 24px;
         text-align: left;
-    @include breakpoint($lg){
-      line-height: rem(28px);
-    }
+        @include breakpoint($lg) {
+          line-height: rem(28px);
+        }
       }
     }
   }
@@ -102,7 +102,7 @@
       outline-color: $eunry-pink;
     }
 
-    @include breakpoint($lg){
+    @include breakpoint($lg) {
       height: 56px;
     }
   }
@@ -118,13 +118,13 @@
     border: none;
     cursor: pointer;
     transition: 0.2s ease;
-    
+
     &:hover {
       opacity: 0.5;
     }
 
     &:active {
-      box-shadow: none; 
+      box-shadow: none;
     }
 
     &-img {
@@ -136,6 +136,20 @@
 
     @include breakpoint($lg) {
       width: 100px;
+    }
+  }
+
+  &__bg-pattern {
+    display: none;
+
+    @include breakpoint($lg) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -165px;
+      z-index: -1;
+      min-height: 800px;
+      max-height: 100vh;
     }
   }
 }

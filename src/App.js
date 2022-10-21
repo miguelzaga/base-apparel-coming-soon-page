@@ -4,6 +4,7 @@ import iconArrow from "/src/images/icon-arrow.svg";
 import iconError from "/src/images/icon-error.svg";
 import heroMobile from "/src/images/hero-mobile.jpg";
 import heroDesktop from "/src/images/hero-desktop.jpg";
+import bgPattern from "/src/images/bg-pattern-desktop.svg";
 
 function App() {
   var [error, setError] = useState(false);
@@ -32,10 +33,10 @@ function App() {
       </header>
 
       <main className="main">
-    <picture>
-    <source media="(min-width: 1024px)" srcSet={heroDesktop} />
-        <img className="main__img" src={heroMobile} />
-    </picture>
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={heroDesktop} />
+          <img className="main__img" src={heroMobile} />
+        </picture>
         <div className="main__container max-width">
           <h1 className="main__title">
             We're <b className="main__title--bold">coming soon</b>
@@ -61,6 +62,7 @@ function App() {
             </button>
           </form>
         </div>
+        <img className="main__bg-pattern" src={bgPattern} />
       </main>
     </div>
   );
